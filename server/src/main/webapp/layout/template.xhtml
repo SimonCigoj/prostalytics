@@ -1,7 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ui="http://java.sun.com/jsf/facelets"
-      xmlns:h="http://java.sun.com/jsf/html"
-      lang="sl" xml:lang="sl">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://java.sun.com/jsf/html"  lang="sl" xml:lang="sl" >
 <head>
 	<title>prostalytics</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -10,7 +8,7 @@
 	<meta name="robots" content="noindex, nofollow" />
 	<meta name="revisit-after" content="30 days" />
 	<!--[if IE]>
-	<link rel="stylesheet" media="all" type="text/css" href="#{ctxRoot}css/pro_dropline_ie.css" />
+	    <link rel="stylesheet" media="all" type="text/css" href="#{ctxRoot}css/pro_dropline_ie.css" />
 	<![endif]-->
 	
     <script type='text/javascript' src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
@@ -31,13 +29,13 @@
 
 <!--[if IE 7]><!-->
 
-<!--  styled select box script version 1 -->
-<script src="#{ctxRoot}js/jquery/jquery.selectbox-0.5.js" type="text/javascript"></script>
-<script type="text/javascript">
-$(document).ready(function() {
-	$('.styledselect').selectbox({ inputClass: "selectbox_styled" });
-});
-</script>
+    <!--  styled select box script version 1 -->
+    <script src="#{ctxRoot}js/jquery/jquery.selectbox-0.5.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('.styledselect').selectbox({ inputClass: "selectbox_styled" });
+    });
+    </script>
  
 
 <!--<![endif]-->
@@ -100,30 +98,9 @@ $(function() {
 	
 <script type="text/javascript">
 
-angular.element(document).ready(function() {
+/*angular.element(document).ready(function() {
 	angular.bootstrap(document, ['ui.directives']);
-});
-
-/* angular.module('demoApp', ['ui'], function($locationProvider) {
-	$locationProvider.hashPrefix('');
-}).value('ui.config', {
-	currency: {
-		symbol: 'EUR €'
-	}
-
-}).directive('scrollto', [function(){
-	return function(scope, elm, attrs) {
-		elm.bind('click', function(e){
-			e.preventDefault();
-			if (attrs.href) {
-				attrs.scrollto = attrs.href;
-			}
-			var top = $(attrs.scrollto).offset().top;
-			$('body').animate({ scrollTop: top }, 800);
-		});
-	};
-}]);
- */
+});*/
 
 $(document).ready(function(){
 	selectMenu();
@@ -296,7 +273,7 @@ $(document).pngFix( );
 	<td>
 	
 	<ui:insert name="content" />
-	
+
 	</td>
 	<td id="tbl-border-right"></td>
 </tr>

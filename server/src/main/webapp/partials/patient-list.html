@@ -1,0 +1,36 @@
+<!--  start content-table-inner ...................................................................... START -->
+<div id="content-table-inner">
+		
+	<!--  start table-content  -->
+	<div id="table-content" ng-controller="PatientListCtrl">
+		
+		<table border="0" width="100%" cellpadding="0" cellspacing="0" id="product-table">
+            <tr>
+                <th class="table-header-repeat line-left">Code</th>
+                <th class="table-header-repeat line-left minwidth-1">Last name</th>
+                <th class="table-header-repeat line-left minwidth-1">First name</th>
+                <th class="table-header-repeat line-left">Birth date</th>
+                <th class="table-header-repeat line-left">External ID</th>
+            </tr>
+            <tbody ng-repeat="patient in patients" >
+                <tr ng-class-even="'alternate-row'" style="cursor: pointer;" ng-click="openForm(patient.id);">
+                    <td>{{patient.code}}</td>
+                    <td>{{patient.surname}}</td>
+                    <td>{{patient.name}}</td>
+                    <td>{{patient.birthDate}}</td>
+                    <td>{{patient.externalId}}</td>
+                </tr>
+            </tbody>
+				
+		</table>
+		<!--  end product-table................................... -->
+	</div>
+</div>
+
+
+
+
+    </ui:define>
+
+</ui:composition>
+</html>

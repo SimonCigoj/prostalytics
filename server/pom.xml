@@ -8,7 +8,7 @@
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>prostalytics-server</artifactId>
+    <artifactId>prostalytics</artifactId>
     <packaging>war</packaging>
     <name>Prostalytics App Server Side</name>
     <description>Prostalytics App Server Side</description>

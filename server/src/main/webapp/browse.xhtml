@@ -9,15 +9,15 @@
 	<ui:param name="selectedMenuId" value="browse-jsf" />
 
     <ui:define name="title">Browse</ui:define>
-	
+
     <ui:define name="content">
-    	<script>
+    	<script type="text/javascript">
         function PatientListCtrl($scope, $http) {
 
             $http.get('#{ctxRoot}rest-mock/patients.json').success(function(data) {
             	  $scope.patients = data;
             });
-            
+
             $scope.openForm = function(id){
                 window.location='#{ctxRoot}form.jsf?id=' + id;
             }
@@ -25,8 +25,8 @@
         }
 
     	</script>
-    
-    
+
+
 		<!--  start content-table-inner ...................................................................... START -->
 		<div id="content-table-inner">
 		
