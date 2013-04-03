@@ -28,7 +28,10 @@
                 <artifactId>jboss-as-maven-plugin</artifactId>
                 <version>7.1.1.Final</version>
                 <inherited>true</inherited>
+
                 <configuration>
+                    <name>prostalytics</name>
+
                     <skip>false</skip>
                 </configuration>
             </plugin>
